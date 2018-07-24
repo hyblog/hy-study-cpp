@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 #include "base_c/base.c"
 
@@ -40,23 +41,43 @@ void base_c()
     param_finger(); //指针参数
 }
 
-#include "base_c++/hello.cpp"
-#include "base_c++/base_typeid.cpp"
-#include "base_c++/base_datatype.cpp"
+#include "base_cpp/hello.cpp"
+#include "base_cpp/base_typeid.cpp"
+#include "base_cpp/base_datatype.cpp"
+#include "base_cpp/base_asm.cpp"
+#include "base_cpp/base_quote.cpp"
+#include "base_cpp/base_head.h"
+#include "base_cpp/base_namespace.cpp"
+#include "base_cpp/base_heap.cpp"
+#include "base_cpp/base_cin.cpp"
 
 /**
  * C++语言基础
  * @return
  */
-int base_ccc()
+int base_cpp()
 {
 //    hello_ccc();
 //    echo_typeid(); //获取类型
 //    echo_wchar(); //宽字符串类型
-    echo_bool(); //布尔类型
+//    echo_bool(); //布尔类型
+//    echo_longlong(); //长长类型
+//    echo_auto(); //弱类型
+//    func_asm(); //汇编调用
+//    func_quote(); //引用类型
+//    cout << var_head << endl; //head变量声明
+//    func_head_sum(); //head函数声明
+//    //内敛函数
+//    int var_a = 20;
+//    func_head_inline(var_a);
+//    cout << var_a << endl;
+//    echo_namespace(); //命名空间
+//    func_deap(); //堆new delete操作
+    cin_cout(); //输入输出
 
     return 0;
 }
+
 
 /**
  * 程序主函数
@@ -64,8 +85,8 @@ int base_ccc()
  */
 int main()
 {
-//    base_c();
-    base_ccc();
+//    base_c(); //C语言基础
+    base_cpp();
 
     return 0;
 }

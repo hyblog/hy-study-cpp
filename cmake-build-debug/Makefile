@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hy/study_c
+CMAKE_SOURCE_DIR = /Users/hy/hy-study-cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hy/study_c/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hy/hy-study-cpp/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hy/study_c/cmake-build-debug/CMakeFiles /Users/hy/study_c/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hy/hy-study-cpp/cmake-build-debug/CMakeFiles /Users/hy/hy-study-cpp/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hy/study_c/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hy/hy-study-cpp/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ study_c/fast:
 	$(MAKE) -f CMakeFiles/study_c.dir/build.make CMakeFiles/study_c.dir/build
 .PHONY : study_c/fast
 
+base_cpp/base_head.o: base_cpp/base_head.cpp.o
+
+.PHONY : base_cpp/base_head.o
+
+# target to build an object file
+base_cpp/base_head.cpp.o:
+	$(MAKE) -f CMakeFiles/study_c.dir/build.make CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o
+.PHONY : base_cpp/base_head.cpp.o
+
+base_cpp/base_head.i: base_cpp/base_head.cpp.i
+
+.PHONY : base_cpp/base_head.i
+
+# target to preprocess a source file
+base_cpp/base_head.cpp.i:
+	$(MAKE) -f CMakeFiles/study_c.dir/build.make CMakeFiles/study_c.dir/base_cpp/base_head.cpp.i
+.PHONY : base_cpp/base_head.cpp.i
+
+base_cpp/base_head.s: base_cpp/base_head.cpp.s
+
+.PHONY : base_cpp/base_head.s
+
+# target to generate assembly for a file
+base_cpp/base_head.cpp.s:
+	$(MAKE) -f CMakeFiles/study_c.dir/build.make CMakeFiles/study_c.dir/base_cpp/base_head.cpp.s
+.PHONY : base_cpp/base_head.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... study_c"
+	@echo "... base_cpp/base_head.o"
+	@echo "... base_cpp/base_head.i"
+	@echo "... base_cpp/base_head.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

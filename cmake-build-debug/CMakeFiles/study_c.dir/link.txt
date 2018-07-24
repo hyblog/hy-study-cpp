@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/study_c.dir/main.cpp.o  -o study_c 
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/study_c.dir/main.cpp.o CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o  -o study_c 

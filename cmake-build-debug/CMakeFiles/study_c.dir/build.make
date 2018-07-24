@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hy/study_c
+CMAKE_SOURCE_DIR = /Users/hy/hy-study-cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hy/study_c/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hy/hy-study-cpp/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/study_c.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/study_c.dir/flags.make
 
 CMakeFiles/study_c.dir/main.cpp.o: CMakeFiles/study_c.dir/flags.make
 CMakeFiles/study_c.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hy/study_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/study_c.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/study_c.dir/main.cpp.o -c /Users/hy/study_c/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hy/hy-study-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/study_c.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/study_c.dir/main.cpp.o -c /Users/hy/hy-study-cpp/main.cpp
 
 CMakeFiles/study_c.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/study_c.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hy/study_c/main.cpp > CMakeFiles/study_c.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hy/hy-study-cpp/main.cpp > CMakeFiles/study_c.dir/main.cpp.i
 
 CMakeFiles/study_c.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/study_c.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hy/study_c/main.cpp -o CMakeFiles/study_c.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hy/hy-study-cpp/main.cpp -o CMakeFiles/study_c.dir/main.cpp.s
 
 CMakeFiles/study_c.dir/main.cpp.o.requires:
 
@@ -81,17 +81,43 @@ CMakeFiles/study_c.dir/main.cpp.o.provides: CMakeFiles/study_c.dir/main.cpp.o.re
 CMakeFiles/study_c.dir/main.cpp.o.provides.build: CMakeFiles/study_c.dir/main.cpp.o
 
 
+CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o: CMakeFiles/study_c.dir/flags.make
+CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o: ../base_cpp/base_head.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hy/hy-study-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o -c /Users/hy/hy-study-cpp/base_cpp/base_head.cpp
+
+CMakeFiles/study_c.dir/base_cpp/base_head.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/study_c.dir/base_cpp/base_head.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hy/hy-study-cpp/base_cpp/base_head.cpp > CMakeFiles/study_c.dir/base_cpp/base_head.cpp.i
+
+CMakeFiles/study_c.dir/base_cpp/base_head.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/study_c.dir/base_cpp/base_head.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hy/hy-study-cpp/base_cpp/base_head.cpp -o CMakeFiles/study_c.dir/base_cpp/base_head.cpp.s
+
+CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o.requires:
+
+.PHONY : CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o.requires
+
+CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o.provides: CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o.requires
+	$(MAKE) -f CMakeFiles/study_c.dir/build.make CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o.provides.build
+.PHONY : CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o.provides
+
+CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o.provides.build: CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o
+
+
 # Object files for target study_c
 study_c_OBJECTS = \
-"CMakeFiles/study_c.dir/main.cpp.o"
+"CMakeFiles/study_c.dir/main.cpp.o" \
+"CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o"
 
 # External object files for target study_c
 study_c_EXTERNAL_OBJECTS =
 
 study_c: CMakeFiles/study_c.dir/main.cpp.o
+study_c: CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o
 study_c: CMakeFiles/study_c.dir/build.make
 study_c: CMakeFiles/study_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hy/study_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable study_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hy/hy-study-cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable study_c"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/study_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,6 +126,7 @@ CMakeFiles/study_c.dir/build: study_c
 .PHONY : CMakeFiles/study_c.dir/build
 
 CMakeFiles/study_c.dir/requires: CMakeFiles/study_c.dir/main.cpp.o.requires
+CMakeFiles/study_c.dir/requires: CMakeFiles/study_c.dir/base_cpp/base_head.cpp.o.requires
 
 .PHONY : CMakeFiles/study_c.dir/requires
 
@@ -108,6 +135,6 @@ CMakeFiles/study_c.dir/clean:
 .PHONY : CMakeFiles/study_c.dir/clean
 
 CMakeFiles/study_c.dir/depend:
-	cd /Users/hy/study_c/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hy/study_c /Users/hy/study_c /Users/hy/study_c/cmake-build-debug /Users/hy/study_c/cmake-build-debug /Users/hy/study_c/cmake-build-debug/CMakeFiles/study_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/hy/hy-study-cpp/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hy/hy-study-cpp /Users/hy/hy-study-cpp /Users/hy/hy-study-cpp/cmake-build-debug /Users/hy/hy-study-cpp/cmake-build-debug /Users/hy/hy-study-cpp/cmake-build-debug/CMakeFiles/study_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/study_c.dir/depend
 
